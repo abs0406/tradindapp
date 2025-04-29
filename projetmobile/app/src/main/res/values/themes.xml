@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Projetmobile" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Vos personnalisations du thème peuvent être ajoutées ici -->
+    </style>
+</resources>

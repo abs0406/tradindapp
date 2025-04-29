@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter un article"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+        <ImageView
+            android:id="@+id/imageArticle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_placeholder"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sélectionner une image"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Titre de l'article"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prix (€)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ou échange contre:"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etExchangeFor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description de l'échange souhaité"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Remplacer l'EditText par un TextView + Spinner -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catégorie"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnAddArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publier l'article"
+            android:layout_marginBottom="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>
